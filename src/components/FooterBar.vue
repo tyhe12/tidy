@@ -13,17 +13,12 @@
                         <v-card-text class="footer__text--no-space-top">
                             <v-list dense dark class="pink lighten-3">
                                 <v-list-tile
+                                    class="footer__navigate-item"
                                     active-class=""
                                     v-for="item in items"
                                     :key="item.title"
                                     :to="item.link"
                                 >
-                                    <v-list-tile-action>
-                                        <v-icon class="mx-3">
-                                            {{ item.icon }}
-                                        </v-icon>
-                                    </v-list-tile-action>
-
                                     <v-list-tile-content class="">{{
                                         item.title
                                     }}</v-list-tile-content>
@@ -39,7 +34,7 @@
                             </div>
                         </v-card-title>
 
-                        <v-card-text>
+                        <v-card-text class="footer__connect--no-space-top">
                             <v-btn
                                 v-for="(icon, idx) in icons"
                                 :key="idx"
@@ -104,6 +99,15 @@ export default {
 }
 
 .footer__text--no-space-top {
+    margin-top: 0;
+    padding-top: 0;
+}
+
+.footer__navigate-item {
+    height: 24px;
+}
+
+.footer__connect--no-space-top {
     margin-top: 0;
     padding-top: 0;
 }
