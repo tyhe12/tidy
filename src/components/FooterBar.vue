@@ -1,0 +1,110 @@
+<template>
+    <v-footer color="pink lighten-3" height="auto">
+        <v-card flat tile class="pink lighten-3 white--text footer__card--fullwidth">
+            <v-container fluid grid-list-xs>
+                <v-layout row wrap>
+                    <v-flex xs12 md6>
+                        <v-card-title primary-title>
+                            <div class="footer__content-title">
+                                <h3 class="my-title title mb-0">Navigate</h3>
+                            </div>
+                        </v-card-title>
+
+                        <v-card-text class="footer__text--no-space-top">
+                            <v-list dense dark class="pink lighten-3">
+                                <v-list-tile
+                                    active-class=""
+                                    v-for="item in items"
+                                    :key="item.title"
+                                    :to="item.link"
+                                >
+                                    <v-list-tile-action>
+                                        <v-icon class="mx-3">
+                                            {{ item.icon }}
+                                        </v-icon>
+                                    </v-list-tile-action>
+
+                                    <v-list-tile-content class="">{{
+                                        item.title
+                                    }}</v-list-tile-content>
+                                </v-list-tile>
+                            </v-list>
+                        </v-card-text>
+                    </v-flex>
+
+                    <v-flex xs12 md6>
+                        <v-card-title primary-title>
+                            <div class="footer__icon-title">
+                                <h3 class="my-title title mb-0">Connect With Me</h3>
+                            </div>
+                        </v-card-title>
+
+                        <v-card-text>
+                            <v-btn
+                                v-for="(icon, idx) in icons"
+                                :key="idx"
+                                class="mx-3 white--text"
+                                icon
+                                :href="icon.link"
+                            >
+                                <v-icon size="24px">{{ icon.icon }}</v-icon>
+                            </v-btn>
+                        </v-card-text>
+                    </v-flex>
+                </v-layout>
+            </v-container>
+
+            <v-divider></v-divider>
+        </v-card>
+    </v-footer>
+</template>
+
+<script>
+export default {
+    data: () => ({
+        items: [
+            { title: 'Home', icon: 'fas fa-home', link: '/' },
+            { title: 'What I Offer', icon: 'fas fa-tags', link: '/offerings' },
+            {
+                title: 'What People Say',
+                icon: 'fas fa-comments',
+                link: '/reviews'
+            },
+            { title: 'FAQs', icon: 'fas fa-question-circle', link: '/faqs' }
+        ],
+        icons: [
+            {
+                icon: 'fab fa-facebook',
+                link: 'https://www.facebook.com'
+            },
+            {
+                icon: 'fab fa-instagram',
+                link: 'https://www.instagram.com'
+            },
+            {
+                icon: 'fas fa-phone-square',
+                link: 'tel:1-847-555-5555'
+            },
+            {
+                icon: 'fas fa-envelope',
+                link: 'mailto:deb@empirerecords.biz?subject=Blog Feedback'
+            }
+        ]
+    })
+}
+</script>
+
+<style>
+.footer__card--fullwidth {
+    width: 100%;
+}
+
+.footer__text {
+    color: white;
+}
+
+.footer__text--no-space-top {
+    margin-top: 0;
+    padding-top: 0;
+}
+</style>
