@@ -9,6 +9,10 @@
 
         <v-spacer></v-spacer>
         <v-toolbar-items class="hidden-sm-and-down">
+            <my-link large to="/about">
+                Who I Am
+            </my-link>
+
             <my-link large to="/offerings">
                 What I Offer
             </my-link>

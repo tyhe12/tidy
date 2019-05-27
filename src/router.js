@@ -1,6 +1,7 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import Home from './views/Home.vue'
+import About from './views/About.vue'
 import Faqs from './views/Faqs.vue'
 import Offerings from './views/Offerings.vue'
 import Reviews from './views/Reviews.vue'
@@ -13,6 +14,11 @@ export default new Router({
             path: '/',
             name: 'home',
             component: Home
+        },
+        {
+            path: '/about',
+            name: 'about',
+            component: About
         },
         {
             path: '/faqs',

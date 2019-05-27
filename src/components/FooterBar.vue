@@ -3,7 +3,7 @@
         <v-card flat tile class="pink lighten-3 white--text footer__card--fullwidth">
             <v-container fluid grid-list-xs>
                 <v-layout row wrap>
-                    <v-flex xs12 md6>
+                    <v-flex xs6>
                         <v-card-title primary-title>
                             <div class="footer__content-title">
                                 <h3 class="my-title title mb-0">Navigate</h3>
@@ -19,7 +19,7 @@
                                     :key="item.title"
                                     :to="item.link"
                                 >
-                                    <v-list-tile-content class="">{{
+                                    <v-list-tile-content class="footer__navigate-item-content">{{
                                         item.title
                                     }}</v-list-tile-content>
                                 </v-list-tile>
@@ -27,7 +27,7 @@
                         </v-card-text>
                     </v-flex>
 
-                    <v-flex xs12 md6>
+                    <v-flex xs6>
                         <v-card-title primary-title>
                             <div class="footer__icon-title">
                                 <h3 class="my-title title mb-0">Connect With Me</h3>
@@ -59,6 +59,7 @@ export default {
     data: () => ({
         items: [
             { title: 'Home', icon: 'fas fa-home', link: '/' },
+            { title: 'Who I Am', icon: 'fas fa-user-circle', link: '/about' },
             { title: 'What I Offer', icon: 'fas fa-tags', link: '/offerings' },
             {
                 title: 'What People Say',
@@ -103,8 +104,8 @@ export default {
     padding-top: 0;
 }
 
-.footer__navigate-item {
-    height: 24px;
+.footer__navigate-item > a {
+    height: 24px !important;
 }
 
 .footer__connect--no-space-top {

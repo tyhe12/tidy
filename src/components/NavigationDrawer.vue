@@ -3,9 +3,9 @@
         <v-layout column fill-height>
             <v-list class="pa-1">
                 <v-list-tile to="/">
-                    <v-list-tile-action>
+                    <!-- <v-list-tile-action>
                         <v-icon>fas fa-home</v-icon>
-                    </v-list-tile-action>
+                    </v-list-tile-action> -->
                     <v-list-tile-content>Keeping It Tidy With Cooley</v-list-tile-content>
                 </v-list-tile>
             </v-list>
@@ -52,6 +52,11 @@ export default {
         return {
             show: this.drawer,
             items: [
+                {
+                    title: 'Who I Am',
+                    icon: 'fas fa-user-circle',
+                    link: '/about'
+                },
                 {
                     title: 'What I Offer',
                     icon: 'fas fa-tags',
