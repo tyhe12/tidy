@@ -12,21 +12,35 @@
 
         <v-flex offset-xs1 xs10 class="section">
             <p class="subheading">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae, in cum
-                laudantium atque quos saepe, unde veniam sequi, assumenda omnis quod fuga
-                dignissimos accusamus adipisci eaque odio ratione? Nobis, reprehenderit! Lorem ipsum
-                dolor sit amet, consectetur adipisicing elit. Neque aspernatur, necessitatibus
-                dolorum perferendis repellat perspiciatis quasi enim itaque tenetur est laboriosam
-                minus consectetur maxime laborum provident! Eius blanditiis nobis commodi?
+                I started Cleaning with Cooley in 2018. After keeping homes for over 15years, I
+                found that a successful clean depended on attention to detail, quality products and
+                absolute integrity.
             </p>
 
             <p class="subheading">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae, in cum
-                laudantium atque quos saepe, unde veniam sequi, assumenda omnis quod fuga
-                dignissimos accusamus adipisci eaque odio ratione? Nobis, reprehenderit! Lorem ipsum
-                dolor sit amet, consectetur adipisicing elit. Neque aspernatur, necessitatibus
-                dolorum perferendis repellat perspiciatis quasi enim itaque tenetur est laboriosam
-                minus consectetur maxime laborum provident! Eius blanditiis nobis commodi?
+                I take pride in my work and believe in open, honest relationships with my clients.
+                Their trust is the highest compliment they can give me.
+            </p>
+
+            <p class="subheading">
+                My mission is to give every customer a little time back each week by keeping their
+                home clean and beautiful so they can focus on their goals.
+            </p>
+
+            <p class="subheading">
+                Outside of the business, I enjoy a good Netflix binge or just enjoying the outdoors.
+            </p>
+
+            <p class="subheading mt-5 mb-0">
+                Tracy Cooley Cleaning with Cooley,
+            </p>
+
+            <p class="subheading">
+                Founder and CEO
+            </p>
+
+            <p class="subheading">
+                Privately owned and operated company.
             </p>
         </v-flex>
         <v-spacer></v-spacer>

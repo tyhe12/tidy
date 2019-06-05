@@ -111,22 +111,27 @@
 </template>
 
 <script>
+import CarouselImage1 from '../assets/img/IMG_1435.jpg'
+import CarouselImage2 from '../assets/img/IMG_1452.jpg'
+import CarouselImage3 from '../assets/img/IMG_1526.jpg'
+import CarouselImage4 from '../assets/img/IMG_1531.jpg'
+
 export default {
     data() {
         return {
             avatarSize: 128,
             items: [
                 {
-                    src: 'https://cdn.vuetifyjs.com/images/carousel/squirrel.jpg'
+                    src: CarouselImage1
                 },
                 {
-                    src: 'https://cdn.vuetifyjs.com/images/carousel/sky.jpg'
+                    src: CarouselImage2
                 },
                 {
-                    src: 'https://cdn.vuetifyjs.com/images/carousel/bird.jpg'
+                    src: CarouselImage3
                 },
                 {
-                    src: 'https://cdn.vuetifyjs.com/images/carousel/planet.jpg'
+                    src: CarouselImage4
                 }
             ]
         }
