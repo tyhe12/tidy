@@ -1,17 +1,22 @@
 <template>
-    <v-card class="pricing-card">
+    <v-card class="review-card">
         <v-card-title primary-title>
-            <div class="review-title">
-                <h3 class="title my-title mb-0">{{ title }}</h3>
-                <v-rating
-                    v-model="rating"
-                    background-color="pink lighten-3"
-                    color="pink"
-                    readonly
-                ></v-rating>
-            </div>
+            <v-layout align-center row wrap class="review-title">
+                <v-flex xs12 sm6>
+                    <h3 class="title my-title mb-0">{{ title }}</h3>
+                </v-flex>
+                <v-flex xs12 sm6>
+                    <v-rating
+                        class="review-rating no-padding-left"
+                        v-model="rating"
+                        background-color="pink lighten-3"
+                        color="pink"
+                        readonly
+                    ></v-rating>
+                </v-flex>
+            </v-layout>
         </v-card-title>
-        <v-card-text class="pricing-card__text">
+        <v-card-text class="review-card__text">
             <slot />
         </v-card-text>
     </v-card>
@@ -34,16 +39,26 @@ export default {
 }
 </script>
 
-<style>
-.pricing-card__text {
+<style scoped lang="scss">
+.review-card__text {
     margin-top: 0;
     padding-top: 0;
 }
 
-.review-title {
+.review-rating {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
+    justify-content: flex-start;
+}
+
+@media only screen and (min-width: 600px) {
+    .review-rating {
+        justify-content: flex-end;
+    }
+}
+</style>
+
+<style>
+.no-padding-left .fa-star {
+    padding-left: 0;
 }
 </style>

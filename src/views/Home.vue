@@ -12,7 +12,7 @@
                                     style="height: 100%;"
                                 >
                                     <div
-                                        class="font-weight-bold headline my-headline text-sm-center v-carousel__headline"
+                                        class="font-weight-bold headline my-headline text-xs-center v-carousel__headline"
                                     >
                                         "Why Tidy Up With Cooley?"
                                     </div>

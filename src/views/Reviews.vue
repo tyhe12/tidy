@@ -4,12 +4,38 @@
             <my-spacer />
         </v-flex>
 
-        <v-flex xs12 v-for="(review, index) in reviews" :key="index">
-            <review-card :rating="review.rating" :title="review.title">
-                Lorem ipsum dolor sit amet, brute iriure accusata ne mea. Eos suavitate referrentur
-                ad, te duo agam libris qualisque, utroque quaestio accommodare no qui. Et percipit
-                laboramus usu, no invidunt verterem nominati mel. Dolorem ancillae an mei, ut putant
-                invenire splendide mel, ea nec propriae adipisci.
+        <v-flex xs12>
+            <review-card :rating="5" title="AWESOME!">
+                Tracy is AWESOME. After she comes to my apartment it is impecable. She is very into
+                cleaning every little spot you might think nobody is going to clean. Since the
+                begging she always went beyond my expectations. Besides her impecable cleaning she
+                is also someone kind, respectful and someone I can trust, nothing ever have gone
+                missing in mi apartment, so with my eyes closed I will give her the keys to my
+                house. Also she is great with pets, she loves coco and treat her with so much
+                love!!!
+            </review-card>
+        </v-flex>
+
+        <v-flex xs12>
+            <review-card :rating="5" title="Creative and Professional">
+                I've had a lot cleaners, but Tracy is different. She not only cleans perfectly, but
+                she does it above and beyond! She is very creative and learns how I like to my
+                apartment to be cleaned the more she does it. She understands how I store different
+                dog toys, and always comes up with creative ways to organize my kitchen counter! She
+                is a very smart but hardworking person!
+            </review-card>
+        </v-flex>
+
+        <v-flex xs12>
+            <review-card :rating="5" title="Great">
+                Tracy was great! Really pleased with her service and professionalism!
+            </review-card>
+        </v-flex>
+
+        <v-flex xs12>
+            <review-card :rating="5" title="Thank You!">
+                Tracy is the Best! She’s so kind, helpful and does the best job cleaning that I ever
+                had. She goes above and beyond. THANK YOU!!!
             </review-card>
         </v-flex>
     </v-layout>
@@ -23,19 +49,7 @@ export default {
     components: {
         ReviewCard,
         MySpacer
-    },
-    data: () => ({
-        reviews: [
-            {
-                rating: 5,
-                title: 'Review Title 1'
-            },
-            {
-                rating: 4,
-                title: 'Review Title 2'
-            }
-        ]
-    })
+    }
 }
 </script>
 

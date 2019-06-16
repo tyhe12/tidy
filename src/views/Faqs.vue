@@ -19,7 +19,7 @@
         </v-flex>
 
         <v-flex xs12>
-            <faq-item title="What’s all is included in your cleaning services?">
+            <faq-item title="What’s all included in your cleaning services?">
                 <div class="subheading font-weight-bold">
                     Bathroom
                 </div>

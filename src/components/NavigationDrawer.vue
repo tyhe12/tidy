@@ -3,10 +3,7 @@
         <v-layout column fill-height>
             <v-list class="pa-1">
                 <v-list-tile to="/">
-                    <!-- <v-list-tile-action>
-                        <v-icon>fas fa-home</v-icon>
-                    </v-list-tile-action> -->
-                    <v-list-tile-content>Keeping It Tidy With Cooley</v-list-tile-content>
+                    <v-list-tile-content>Cleaning With Cooley</v-list-tile-content>
                 </v-list-tile>
             </v-list>
 
@@ -58,7 +55,7 @@ export default {
                     link: '/about'
                 },
                 {
-                    title: 'What I Offer',
+                    title: 'My Services',
                     icon: 'fas fa-tags',
                     link: '/offerings'
                 },
@@ -66,6 +63,11 @@ export default {
                     title: 'What People Say',
                     icon: 'fas fa-comments',
                     link: '/reviews'
+                },
+                {
+                    title: 'What Is Included',
+                    icon: 'fas fa-box-open',
+                    link: '/included'
                 },
                 { title: 'FAQs', icon: 'fas fa-question-circle', link: '/faqs' }
             ],

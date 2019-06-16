@@ -60,13 +60,16 @@ export default {
             {
                 title: 'Condo/House 2000-3000 Sq. ft',
                 price: 250
+            },
+            {
+                title: 'Office Cleaning',
+                price: 300
             }
         ]
         const addons = [
             {
-                title: 'Green Clean',
-                price: 5,
-                subtitle: 'Eco Friendly Products'
+                title: 'Interior Window Cleaning',
+                price: 30
             },
             {
                 title: 'Refrigirator',
@@ -77,9 +80,9 @@ export default {
                 price: 15
             },
             {
-                title: 'Laundry / 2 Loads',
+                title: 'Laundry & Folding',
                 price: 35,
-                subtitle: 'Including Folding, Additional $5/load'
+                subtitle: 'Initially 2 loads, Additional $5/load'
             },
             {
                 title: 'Closet Organization',
@@ -124,7 +127,7 @@ export default {
             active: null,
             tabs: [
                 {
-                    name: 'Deep Clean',
+                    name: 'Services',
                     key: 'cleans',
                     items: [...cleans, ...specials]
                 },

@@ -3,7 +3,7 @@
         <v-card flat tile class="pink lighten-3 white--text footer__card--fullwidth">
             <v-container fluid grid-list-xs>
                 <v-layout row wrap>
-                    <v-flex xs6>
+                    <v-flex sm6 xs12>
                         <v-card-title primary-title>
                             <div class="footer__content-title">
                                 <h3 class="my-title title mb-0">Navigate</h3>
@@ -27,7 +27,7 @@
                         </v-card-text>
                     </v-flex>
 
-                    <v-flex xs6>
+                    <v-flex sm6 xs12>
                         <v-card-title primary-title>
                             <div class="footer__icon-title">
                                 <h3 class="my-title title mb-0">Connect With Me</h3>
@@ -60,11 +60,16 @@ export default {
         items: [
             { title: 'Home', icon: 'fas fa-home', link: '/' },
             { title: 'Who I Am', icon: 'fas fa-user-circle', link: '/about' },
-            { title: 'What I Offer', icon: 'fas fa-tags', link: '/offerings' },
+            { title: 'My Services', icon: 'fas fa-tags', link: '/offerings' },
             {
                 title: 'What People Say',
                 icon: 'fas fa-comments',
                 link: '/reviews'
+            },
+            {
+                title: 'What Is Included',
+                icon: 'fas fa-box-open',
+                link: '/included'
             },
             { title: 'FAQs', icon: 'fas fa-question-circle', link: '/faqs' }
         ],
@@ -76,6 +81,10 @@ export default {
             {
                 icon: 'fab fa-instagram',
                 link: 'https://www.instagram.com'
+            },
+            {
+                icon: 'fab fa-yelp',
+                link: 'https://www.yelp.com'
             },
             {
                 icon: 'fas fa-phone-square',

@@ -5,6 +5,7 @@ import About from './views/About.vue'
 import Faqs from './views/Faqs.vue'
 import Offerings from './views/Offerings.vue'
 import Reviews from './views/Reviews.vue'
+import Included from './views/Included.vue'
 
 Vue.use(Router)
 
@@ -38,6 +39,11 @@ export default new Router({
             path: '/reviews',
             name: 'reviews',
             component: Reviews
+        },
+        {
+            path: '/included',
+            name: 'included',
+            component: Included
         }
     ]
 })
