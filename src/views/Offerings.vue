@@ -24,6 +24,7 @@
                             :title="item.title"
                             :price="item.price"
                             :subtitle="item.subtitle"
+                            :hourly="item.hourly"
                         />
                     </v-flex>
                 </v-layout>
@@ -43,27 +44,54 @@ export default {
         const cleans = [
             {
                 title: 'Studio/One Bedroom',
-                price: 65
+                price: 70
             },
             {
                 title: 'Two Bedroom',
-                price: 80
+                price: 85
             },
             {
                 title: 'Three Bedroom',
-                price: 90
+                price: 100
             },
             {
                 title: 'Condo/House 1000-2000 Sq. ft',
-                price: 150
+                price: 45,
+                hourly: true
             },
             {
                 title: 'Condo/House 2000-3000 Sq. ft',
-                price: 250
+                price: 45,
+                hourly: true,
+                subtitle: 'For over 3000 sq. ft starting ar $50/hr'
             },
             {
                 title: 'Office Cleaning',
-                price: 300
+                price: 40,
+                hourly: true
+            },
+            {
+                title: 'Winter/Spring Clean',
+                price: 45,
+                subtitle: 'Regular cleaning and hard-to-reach corners, you need this twice a year!',
+                hourly: true
+            },
+            {
+                title: 'Pre-party Clean',
+                price: 45,
+                subtitle: 'Common Areas, Prices vary with sizes',
+                hourly: true
+            },
+            {
+                title: 'After Party Clean',
+                price: 45,
+                subtitle: 'Common Areas, Prices vary with sizes',
+                hourly: true
+            },
+            {
+                title: 'Move In/Out Clean',
+                price: 90,
+                subtitle: 'Prices vary with sizes'
             }
         ]
         const addons = [
@@ -76,8 +104,8 @@ export default {
                 price: 25
             },
             {
-                title: 'Stove',
-                price: 15
+                title: 'Oven',
+                price: 20
             },
             {
                 title: 'Laundry & Folding',
@@ -85,12 +113,12 @@ export default {
                 subtitle: 'Initially 2 loads, Additional $5/load'
             },
             {
-                title: 'Closet Organization',
-                price: 20
+                title: 'General Closet Organization',
+                price: 40
             },
             {
-                title: 'Cabinet Organization',
-                price: 20
+                title: 'General Cabinet Organization',
+                price: 40
             },
             {
                 title: 'Baseboards',
@@ -101,35 +129,13 @@ export default {
                 price: 20
             }
         ]
-        const specials = [
-            {
-                title: 'Winter/Spring Clean',
-                price: 100,
-                subtitle: 'Regular cleaning and hard-to-reach corners, you need this twice a year!'
-            },
-            {
-                title: 'Pre-party Clean',
-                price: 50,
-                subtitle: 'Kitchen, Bathroom, and Living Room'
-            },
-            {
-                title: 'After Party Clean',
-                price: 80,
-                subtitle: 'Prices vary with sizes'
-            },
-            {
-                title: 'Move In/Out Clean',
-                price: 80,
-                subtitle: 'Prices vary with sizes'
-            }
-        ]
         return {
             active: null,
             tabs: [
                 {
                     name: 'Services',
                     key: 'cleans',
-                    items: [...cleans, ...specials]
+                    items: cleans
                 },
                 {
                     name: 'Add-on Services',

@@ -8,11 +8,28 @@
             <v-card color="included-section">
                 <v-layout align-center row wrap>
                     <v-flex xs12 sm5>
-                        <v-img
-                            src="https://cdn.vuetifyjs.com/images/cards/foster.jpg"
-                            height="200px"
-                            contain
-                        ></v-img>
+                        <v-img :src="livingroom" height="200px" contain></v-img>
+                    </v-flex>
+                    <v-flex xs12 sm7>
+                        <v-card-title primary-title>
+                            <div>
+                                <div class="headline my-headline">Living Room &amp; Bedrooms</div>
+                                <div class="subheading">
+                                    Tidy up, and make bed, change linen by request, surfaces dust,
+                                    mirrors cleaned, general tidying up.
+                                </div>
+                            </div>
+                        </v-card-title>
+                    </v-flex>
+                </v-layout>
+            </v-card>
+        </v-flex>
+
+        <v-flex xs12>
+            <v-card color="included-section">
+                <v-layout align-center row wrap>
+                    <v-flex xs12 sm5>
+                        <v-img :src="bathroom" height="200px" contain></v-img>
                     </v-flex>
                     <v-flex xs12 sm7>
                         <v-card-title primary-title>
@@ -35,11 +52,7 @@
             <v-card color="included-section">
                 <v-layout align-center row wrap>
                     <v-flex xs12 sm5>
-                        <v-img
-                            src="https://cdn.vuetifyjs.com/images/cards/foster.jpg"
-                            height="200px"
-                            contain
-                        ></v-img>
+                        <v-img :src="kitchen" height="200px" contain></v-img>
                     </v-flex>
                     <v-flex xs12 sm7>
                         <v-card-title primary-title>
@@ -63,41 +76,12 @@
             <v-card color="included-section">
                 <v-layout align-center row wrap>
                     <v-flex xs12 sm5>
-                        <v-img
-                            src="https://cdn.vuetifyjs.com/images/cards/foster.jpg"
-                            height="200px"
-                            contain
-                        ></v-img>
+                        <v-img :src="bedroom" height="200px" contain></v-img>
                     </v-flex>
                     <v-flex xs12 sm7>
                         <v-card-title primary-title>
                             <div>
-                                <div class="headline my-headline">Living Room &amp; Bedrooms</div>
-                                <div class="subheading">
-                                    Tidy up, and make bed (change linen if left on the bed),
-                                    surfaces dust, mirrors cleaned, general tidying up.
-                                </div>
-                            </div>
-                        </v-card-title>
-                    </v-flex>
-                </v-layout>
-            </v-card>
-        </v-flex>
-
-        <v-flex xs12>
-            <v-card color="included-section">
-                <v-layout align-center row wrap>
-                    <v-flex xs12 sm5>
-                        <v-img
-                            src="https://cdn.vuetifyjs.com/images/cards/foster.jpg"
-                            height="200px"
-                            contain
-                        ></v-img>
-                    </v-flex>
-                    <v-flex xs12 sm7>
-                        <v-card-title primary-title>
-                            <div>
-                                <div class="headline my-headline">Other</div>
+                                <div class="headline my-headline">Every Room</div>
                                 <div class="subheading">
                                     Remove trash, general tidying up and all floors will be vacuumed
                                     and mop
@@ -114,8 +98,18 @@
 
 <script>
 import MySpacer from '../components/MySpacer.vue'
+import Livingroom from '../assets/img/living_3.jpg'
+import Kitchen from '../assets/img/kitchen_2.jpg'
+import Bedroom from '../assets/img/bedroom_2.jpg'
+import Bathroom from '../assets/img/bathroom_1.jpg'
 
 export default {
+    data: () => ({
+        livingroom: Livingroom,
+        kitchen: Kitchen,
+        bedroom: Bedroom,
+        bathroom: Bathroom
+    }),
     components: {
         MySpacer
     }

@@ -3,7 +3,9 @@
         <v-layout column fill-height>
             <v-list class="pa-1">
                 <v-list-tile to="/">
-                    <v-list-tile-content>Cleaning With Cooley</v-list-tile-content>
+                    <v-list-tile-content>
+                        <v-img :src="logo" contain width="230"></v-img>
+                    </v-list-tile-content>
                 </v-list-tile>
             </v-list>
 
@@ -37,6 +39,8 @@
 </template>
 
 <script>
+import Logo from '../assets/logo_main.png'
+
 export default {
     props: {
         drawer: {
@@ -47,6 +51,7 @@ export default {
     },
     data() {
         return {
+            logo: Logo,
             show: this.drawer,
             items: [
                 {
@@ -60,14 +65,14 @@ export default {
                     link: '/offerings'
                 },
                 {
-                    title: 'What People Say',
-                    icon: 'fas fa-comments',
-                    link: '/reviews'
-                },
-                {
                     title: 'What Is Included',
                     icon: 'fas fa-box-open',
                     link: '/included'
+                },
+                {
+                    title: 'What People Say',
+                    icon: 'fas fa-comments',
+                    link: '/reviews'
                 },
                 { title: 'FAQs', icon: 'fas fa-question-circle', link: '/faqs' }
             ],

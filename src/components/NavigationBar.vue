@@ -3,7 +3,7 @@
         <v-toolbar-side-icon @click="iconClickHandler"></v-toolbar-side-icon>
         <v-toolbar-title class="my-headline headline text-uppercase">
             <router-link class="link-title" tag="span" to="/">
-                Cleaning with Cooley
+                <v-img :src="logo" contain height="100%" width="230"></v-img>
             </router-link>
         </v-toolbar-title>
 
@@ -25,16 +25,16 @@
                     </v-btn>
                 </template>
 
-                <v-list>
+                <v-list dense class="grey lighten-4">
                     <v-list-tile>
-                        <v-btn class="link link-menu" flat large to="/reviews" active-class="">
-                            What People Say
+                        <v-btn class="link link-menu" flat large to="/included" active-class="">
+                            What is Included
                         </v-btn>
                     </v-list-tile>
 
                     <v-list-tile>
-                        <v-btn class="link link-menu" flat large to="/included" active-class="">
-                            What is Included
+                        <v-btn class="link link-menu" flat large to="/reviews" active-class="">
+                            What People Say
                         </v-btn>
                     </v-list-tile>
 
@@ -50,7 +50,12 @@
 </template>
 
 <script>
+import Logo from '../assets/logo_main.png'
+
 export default {
+    data: () => ({
+        logo: Logo
+    }),
     methods: {
         iconClickHandler() {
             this.$emit('click:icon')

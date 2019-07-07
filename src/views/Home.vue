@@ -14,7 +14,7 @@
                                     <div
                                         class="font-weight-bold headline my-headline text-xs-center v-carousel__headline"
                                     >
-                                        "Why Tidy Up With Cooley?"
+                                        "Cleaning with Cooley Mission Statement"
                                     </div>
                                     <div class="text-xs-center subheading v-carousel__text">
                                         I'm here to provide a clean and a positive atmosphere in my
@@ -35,7 +35,7 @@
         <v-layout align-center justify-center row wrap class="section--big">
             <v-flex xs12 md7>
                 <div class="my-headline headline font-weight-bold headline-text text-xs-center">
-                    "Why Tidy Up With Cooley?"
+                    "My Mission Statement"
                 </div>
                 <p class="text-xs-center subheading" color="pink lighten-3">
                     My goal is to provide a clean and a positive atmosphere in my clients’ home by
@@ -57,12 +57,33 @@
         <v-layout align-center justify-center row wrap class="section--big">
             <v-flex xs12 md7 order-md2>
                 <div class="my-headline headline font-weight-bold headline-text text-xs-center">
-                    "How will Cooley clean my home?"
+                    "Why Tidy Up With Cooley?"
                 </div>
-                <p class="text-xs-center subheading">
-                    I don't believe in cleaning halfway - Every clean is a deep clean and I bring my
-                    own products!
-                </p>
+                <v-list dense class="transparent">
+                    <v-list-tile>
+                        <p class="list-text text-xs-center subheading">
+                            Licensed, Insured &amp; Bonded
+                        </p>
+                    </v-list-tile>
+
+                    <v-list-tile>
+                        <p class="list-text text-xs-center subheading">
+                            Background checked employees
+                        </p>
+                    </v-list-tile>
+
+                    <v-list-tile>
+                        <p class="list-text text-xs-center subheading">
+                            Eco friendly cleaning products
+                        </p>
+                    </v-list-tile>
+
+                    <v-list-tile>
+                        <p class="list-text text-xs-center subheading">
+                            Professionally trained and great customer service
+                        </p>
+                    </v-list-tile>
+                </v-list>
             </v-flex>
             <v-flex xs12 md5 d-flex align-center justify-center>
                 <v-avatar :size="avatarSize">
@@ -74,14 +95,11 @@
         <v-layout align-center justify-center row wrap class="section--big">
             <v-flex xs12 md7>
                 <div class="my-headline headline font-weight-bold headline-text text-xs-center">
-                    "Why Tidy Up With Cooley?"
+                    "Referral Incentives?"
                 </div>
                 <p class="text-xs-center subheading" color="pink lighten-3">
-                    My goal is to provide a clean and a positive atmosphere in my clients’ home by
-                    delivering world class customer service and cleaning. I value open and honest
-                    relationships with my clients and love giving them a little time back in their
-                    week to focus on their goals. I want to always deliver the “Wow” through my
-                    services.
+                    Get 25% off your next clean and get your friend 15% off their first clean. Get a
+                    free clean when you refer 3 friends.
                 </p>
             </v-flex>
             <v-flex xs12 md5 d-flex align-center justify-center>
@@ -90,31 +108,14 @@
                 </v-avatar>
             </v-flex>
         </v-layout>
-
-        <v-layout align-center justify-center row wrap class="section--big">
-            <v-flex xs12 md7 order-md2>
-                <div class="my-headline headline font-weight-bold headline-text text-xs-center">
-                    "How will Cooley clean my home?"
-                </div>
-                <p class="text-xs-center subheading">
-                    I don't believe in cleaning halfway - Every clean is a deep clean and I bring my
-                    own products!
-                </p>
-            </v-flex>
-            <v-flex xs12 md5 d-flex align-center justify-center>
-                <v-avatar :size="avatarSize">
-                    <img src="../assets/logo.png" alt="avatar" />
-                </v-avatar>
-            </v-flex>
-        </v-layout>
     </v-layout>
 </template>
 
 <script>
-import CarouselImage1 from '../assets/img/IMG_1435.jpg'
-import CarouselImage2 from '../assets/img/IMG_1452.jpg'
-import CarouselImage3 from '../assets/img/IMG_1526.jpg'
-import CarouselImage4 from '../assets/img/IMG_1531.jpg'
+import CarouselImage1 from '../assets/img/living_1.jpg'
+import CarouselImage2 from '../assets/img/kitchen_1.jpg'
+import CarouselImage3 from '../assets/img/living_2.jpg'
+import CarouselImage4 from '../assets/img/bathroom_2.jpg'
 
 export default {
     data() {
@@ -167,5 +168,9 @@ export default {
 .headline-text {
     padding-top: 32px;
     padding-bottom: 32px;
+}
+
+.list-text {
+    width: 100%;
 }
 </style>

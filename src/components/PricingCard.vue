@@ -19,7 +19,7 @@
             <v-card-actions class="pricing-section">
                 Estimate
                 <v-spacer></v-spacer>
-                <div class="price">${{ price }}</div>
+                <div class="price">{{ priceTag }}</div>
             </v-card-actions>
         </v-card>
     </v-hover>
@@ -41,6 +41,15 @@ export default {
         subtitle: {
             type: String,
             default: ''
+        },
+        hourly: {
+            tyoe: Boolean,
+            default: false
+        }
+    },
+    computed: {
+        priceTag() {
+            return this.hourly ? `$${this.price}/hr` : `$${this.price}`
         }
     }
 }
