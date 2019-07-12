@@ -1,5 +1,5 @@
 <template>
-    <v-layout align-center justify-center row wrap>
+    <div>
         <v-layout align-center class="section--big">
             <v-flex xs12>
                 <v-hover>
@@ -118,7 +118,7 @@
                 </v-avatar>
             </v-flex>
         </v-layout>
-    </v-layout>
+    </div>
 </template>
 
 <script>
