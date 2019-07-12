@@ -76,20 +76,24 @@ export default {
         icons: [
             {
                 icon: 'fab fa-facebook',
-                link: 'https://www.facebook.com'
+                link: 'https://www.facebook.com/CleaningwithCooley'
             },
             {
                 icon: 'fab fa-instagram',
-                link: 'https://www.instagram.com'
+                link: 'https://www.instagram.com/cleaningwithcooley/'
             },
             {
                 icon: 'fab fa-yelp',
                 link: 'https://www.yelp.com'
             },
             {
-                icon: 'fas fa-phone-square',
-                link: 'tel:1-847-555-5555'
+                icon: 'fab fa-twitter',
+                link: 'https://twitter.com/CleaningwCooley'
             },
+            // {
+            //     icon: 'fas fa-phone-square',
+            //     link: 'tel:708-308-8582'
+            // },
             {
                 icon: 'fas fa-envelope',
                 link: 'mailto:deb@empirerecords.biz?subject=Blog Feedback'

@@ -46,16 +46,20 @@
                 </p>
             </v-flex>
             <v-flex xs12 md5 d-flex align-center justify-center>
-                <v-avatar :size="avatarSize">
-                    <img src="https://vuetifyjs.com/apple-touch-icon-180x180.png" alt="avatar" />
-                </v-avatar>
+                <v-img
+                    :src="roundLogo"
+                    contain
+                    :height="imgSize"
+                    :width="imgSize"
+                    alt="Logo"
+                ></v-img>
             </v-flex>
         </v-layout>
 
         <!-- <v-divider xs12 class="section" /> -->
 
         <v-layout align-center justify-center row wrap class="section--big">
-            <v-flex xs12 md7 order-md2>
+            <v-flex xs12 md6 order-md2>
                 <div class="my-headline headline font-weight-bold headline-text text-xs-center">
                     "Why Tidy Up With Cooley?"
                 </div>
@@ -85,26 +89,32 @@
                     </v-list-tile>
                 </v-list>
             </v-flex>
-            <v-flex xs12 md5 d-flex align-center justify-center>
-                <v-avatar :size="avatarSize">
-                    <img src="https://vuetifyjs.com/apple-touch-icon-180x180.png" alt="avatar" />
-                </v-avatar>
+            <v-flex xs12 md6 d-flex align-center justify-center>
+                <v-img
+                    :src="bondedImg"
+                    contain
+                    :height="imgSize"
+                    :width="imgSize"
+                    alt="Bonded and Insured"
+                ></v-img>
             </v-flex>
         </v-layout>
 
         <v-layout align-center justify-center row wrap class="section--big">
-            <v-flex xs12 md7>
+            <v-flex xs12 md6>
                 <div class="my-headline headline font-weight-bold headline-text text-xs-center">
                     "Referral Incentives?"
                 </div>
                 <p class="text-xs-center subheading" color="pink lighten-3">
-                    Get 25% off your next clean and get your friend 15% off their first clean. Get a
-                    free clean when you refer 3 friends.
+                    Get 25% off your next clean and get your friend 15% off.
+                </p>
+                <p class="text-xs-center subheading" color="pink lighten-3">
+                    Get a free clean when you refer 3 friends.
                 </p>
             </v-flex>
-            <v-flex xs12 md5 d-flex align-center justify-center>
-                <v-avatar :size="avatarSize">
-                    <img src="https://vuetifyjs.com/apple-touch-icon-180x180.png" alt="avatar" />
+            <v-flex xs12 md6 d-flex align-center justify-center>
+                <v-avatar :size="imgSize">
+                    <img :src="avatarImg" alt="avatar" />
                 </v-avatar>
             </v-flex>
         </v-layout>
@@ -116,11 +126,17 @@ import CarouselImage1 from '../assets/img/living_1.jpg'
 import CarouselImage2 from '../assets/img/kitchen_1.jpg'
 import CarouselImage3 from '../assets/img/living_2.jpg'
 import CarouselImage4 from '../assets/img/bathroom_2.jpg'
+import BondedImage from '../assets/bonded.png'
+import RoundLogo from '../assets/logo_round.png'
+import LivingRoom from '../assets/img/living_4.jpg'
 
 export default {
     data() {
         return {
-            avatarSize: 128,
+            bondedImg: BondedImage,
+            roundLogo: RoundLogo,
+            avatarImg: LivingRoom,
+            imgSize: 200,
             items: [
                 {
                     src: CarouselImage1

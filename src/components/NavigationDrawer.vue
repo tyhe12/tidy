@@ -77,11 +77,11 @@ export default {
                 { title: 'FAQs', icon: 'fas fa-question-circle', link: '/faqs' }
             ],
             contact: [
-                { icon: 'fas fa-phone', text: '123-456-7890', link: 'tel:1-847-555-5555' },
+                { icon: 'fas fa-phone', text: '708-308-8582', link: 'tel:708-308-8582' },
                 {
                     icon: 'fas fa-envelope',
-                    text: 'SOMETHING@SOMETHING.COM',
-                    link: 'mailto:deb@empirerecords.biz?subject=Blog Feedback'
+                    text: 'info@cleaningwithcooley.com',
+                    link: 'mailto:info@cleaningwithcooley.com'
                 }
             ]
         }
