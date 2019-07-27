@@ -84,16 +84,12 @@ export default {
             },
             {
                 icon: 'fab fa-yelp',
-                link: 'https://www.yelp.com'
+                link: 'https://www.yelp.com/biz/cleaning-with-cooley-chicago'
             },
             {
                 icon: 'fab fa-twitter',
                 link: 'https://twitter.com/CleaningwCooley'
             },
-            // {
-            //     icon: 'fas fa-phone-square',
-            //     link: 'tel:708-308-8582'
-            // },
             {
                 icon: 'fas fa-envelope',
                 link: 'mailto:deb@empirerecords.biz?subject=Blog Feedback'

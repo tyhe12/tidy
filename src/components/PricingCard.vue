@@ -17,7 +17,7 @@
             <v-divider light></v-divider>
 
             <v-card-actions class="pricing-section">
-                Estimate
+                <div class="estimate">{{ hourly ? 'Hourly Rate' : 'Estimate' }}</div>
                 <v-spacer></v-spacer>
                 <div class="price">{{ priceTag }}</div>
             </v-card-actions>

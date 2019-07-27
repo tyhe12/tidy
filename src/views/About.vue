@@ -18,7 +18,7 @@
 
                     <v-flex xs12 d-flex justify-center>
                         <v-avatar size="200">
-                            <img src="../assets/logo.png" alt="avatar" />
+                            <img :src="headshot" alt="avatar" />
                         </v-avatar>
                     </v-flex>
 
@@ -26,7 +26,7 @@
                         <v-card-text class="font-weight-bold">
                             <p class="subheading">
                                 I started Cleaning with Cooley in 2018. After keeping homes for over
-                                15years, I found that a successful clean depended on attention to
+                                15 years, I found that a successful clean depended on attention to
                                 detail, quality products and absolute integrity.
                             </p>
 
@@ -43,12 +43,12 @@
                             </p>
 
                             <p class="subheading">
-                                Outside of the business, I enjoy a good Netflix binge or just
-                                enjoying the outdoors.
+                                Outside of the business, I enjoy reading, a good Netflix binge and
+                                traveling.
                             </p>
 
                             <p class="subheading mt-5 mb-0">
-                                Tracy Cooley, Cleaning with Cooley,
+                                Tracy Cooley, Cleaning with Cooley LLC
                             </p>
 
                             <p class="subheading">
@@ -69,11 +69,15 @@
 
 <script>
 import MySpacer from '../components/MySpacer.vue'
+import Headshot from '../assets/img/headshot.png'
 
 export default {
     components: {
         MySpacer
-    }
+    },
+    data: () => ({
+        headshot: Headshot
+    })
 }
 </script>
 

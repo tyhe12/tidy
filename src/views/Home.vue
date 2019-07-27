@@ -57,11 +57,32 @@
         </v-layout>
 
         <!-- <v-divider xs12 class="section" /> -->
-
         <v-layout align-center justify-center row wrap class="section--big">
             <v-flex xs12 md6 order-md2>
                 <div class="my-headline headline font-weight-bold headline-text text-xs-center">
-                    "Why Tidy Up With Cooley?"
+                    "Referral Incentives?"
+                </div>
+                <p class="text-xs-center subheading" color="pink lighten-3">
+                    Get 25% off your next clean and get your friend 15% off.
+                </p>
+                <p class="text-xs-center subheading" color="pink lighten-3">
+                    Get a free clean when you refer 3 friends.
+                </p>
+                <p class="text-xs-center subheading" color="pink lighten-3">
+                    *Contact for more details.
+                </p>
+            </v-flex>
+            <v-flex xs12 md6 d-flex align-center justify-center>
+                <v-avatar :size="imgSize">
+                    <img :src="avatarImg" alt="avatar" />
+                </v-avatar>
+            </v-flex>
+        </v-layout>
+
+        <v-layout align-center justify-center row wrap class="section--big">
+            <v-flex xs12 md6>
+                <div class="my-headline headline font-weight-bold headline-text text-xs-center">
+                    "Why Clean With Cooley?"
                 </div>
                 <v-list dense class="transparent">
                     <v-list-tile>
@@ -97,25 +118,6 @@
                     :width="imgSize"
                     alt="Bonded and Insured"
                 ></v-img>
-            </v-flex>
-        </v-layout>
-
-        <v-layout align-center justify-center row wrap class="section--big">
-            <v-flex xs12 md6>
-                <div class="my-headline headline font-weight-bold headline-text text-xs-center">
-                    "Referral Incentives?"
-                </div>
-                <p class="text-xs-center subheading" color="pink lighten-3">
-                    Get 25% off your next clean and get your friend 15% off.
-                </p>
-                <p class="text-xs-center subheading" color="pink lighten-3">
-                    Get a free clean when you refer 3 friends.
-                </p>
-            </v-flex>
-            <v-flex xs12 md6 d-flex align-center justify-center>
-                <v-avatar :size="imgSize">
-                    <img :src="avatarImg" alt="avatar" />
-                </v-avatar>
             </v-flex>
         </v-layout>
     </div>

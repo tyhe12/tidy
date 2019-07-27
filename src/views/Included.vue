@@ -13,10 +13,12 @@
                     <v-flex xs12 sm7>
                         <v-card-title primary-title>
                             <div>
-                                <div class="headline my-headline">Living Room &amp; Bedrooms</div>
+                                <div class="headline my-headline">
+                                    Bedrooms, Living Room &amp; Common Areas
+                                </div>
                                 <div class="subheading">
-                                    Tidy up, and make bed, change linen by request, surfaces dust,
-                                    mirrors cleaned, general tidying up.
+                                    Tidy up, make bed (change linen by request) surfaces dust,
+                                    mirrors cleaned and general tidying up.
                                 </div>
                             </div>
                         </v-card-title>
@@ -83,8 +85,8 @@
                             <div>
                                 <div class="headline my-headline">Every Room</div>
                                 <div class="subheading">
-                                    Remove trash, general tidying up and all floors will be vacuumed
-                                    and mop
+                                    General tidying up, clean all floor surfaces, remove trash &amp;
+                                    recycling.
                                 </div>
                             </div>
                         </v-card-title>

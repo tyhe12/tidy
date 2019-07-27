@@ -55,18 +55,17 @@ export default {
                 price: 100
             },
             {
-                title: 'Condo/House 1000-2000 Sq. ft',
+                title: 'Condo/House 1000-3000 Sq. ft',
                 price: 45,
                 hourly: true
             },
             {
-                title: 'Condo/House 2000-3000 Sq. ft',
-                price: 45,
-                hourly: true,
-                subtitle: 'For over 3000 sq. ft starting ar $50/hr'
+                title: 'Condo/House over 3000 Sq. ft',
+                price: 50,
+                hourly: true
             },
             {
-                title: 'Office Cleaning',
+                title: 'Office Clean',
                 price: 40,
                 hourly: true
             },
@@ -78,14 +77,14 @@ export default {
             },
             {
                 title: 'Pre-party Clean',
-                price: 45,
+                price: 40,
                 subtitle: 'Common Areas, Prices vary with sizes',
                 hourly: true
             },
             {
                 title: 'After Party Clean',
                 price: 45,
-                subtitle: 'Common Areas, Prices vary with sizes',
+                subtitle: 'Prices vary with sizes',
                 hourly: true
             },
             {
@@ -96,37 +95,30 @@ export default {
         ]
         const addons = [
             {
-                title: 'Interior Window Cleaning',
+                title: 'Interior Window Clean',
                 price: 30
             },
             {
-                title: 'Refrigirator',
-                price: 25
+                title: 'Interior Refrigirator Clean',
+                price: 35
             },
             {
-                title: 'Oven',
-                price: 20
+                title: 'Interior Oven Clean',
+                price: 30
             },
             {
-                title: 'Laundry & Folding',
+                title: 'Wash, Dry & Fold',
                 price: 35,
-                subtitle: 'Initially 2 loads, Additional $5/load'
+                subtitle: 'Up to 2 loads, Additional $5/load'
             },
             {
                 title: 'General Closet Organization',
-                price: 40
+                price: 40,
+                subtitle: 'Up to 2 closets, Additional $25/closet'
             },
             {
                 title: 'General Cabinet Organization',
                 price: 40
-            },
-            {
-                title: 'Baseboards',
-                price: 10
-            },
-            {
-                title: 'Dusting Blinds',
-                price: 20
             }
         ]
         return {

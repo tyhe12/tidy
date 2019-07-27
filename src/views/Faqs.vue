@@ -13,7 +13,7 @@
 
         <v-flex xs12>
             <faq-item title="How do I pay?">
-                We accept Cash payments, Checks, Credit Cards, Belle, Cash App, Venmo, PayPal and
+                We accept Cash payments, Checks, Credit Cards, Zelle, Cash App, Venmo, PayPal and
                 Apple Pay.
             </faq-item>
         </v-flex>
@@ -34,14 +34,14 @@
                 and disinfect counters, wipe down table and chairs. Cabinets wiped down. Hand-wipe
                 outside of the trash can. General tidying up.
                 <div class="subheading font-weight-bold">
-                    Living Room/Bedrooms
+                    Bedrooms, Living Room &amp; Common Areas
                 </div>
-                Tidy up, and make bed (change linen if left on the bed), surfaces dust, mirrors
-                cleaned, general tidying up.
+                Tidy up, make bed (change linen by request),surfaces dust, mirrors cleaned and
+                general tidying up.
                 <div class="subheading font-weight-bold">
-                    Others
+                    Every Room
                 </div>
-                Remove trash, general tidying up and all floors will be vacuumed and mop
+                General tidying up, clean all floor surfaces, remove all trash and recycling.
             </faq-item>
         </v-flex>
 
@@ -74,8 +74,7 @@
 
         <v-flex xs12>
             <faq-item title="Do you offer Green or Eco-Friendly Cleaning?">
-                Yes, we do offer Eco-friendly House cleaning products, per your request on our
-                website.
+                Yes, we do offer Eco-friendly House cleaning products website.
             </faq-item>
         </v-flex>
 
