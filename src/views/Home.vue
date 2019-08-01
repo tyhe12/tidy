@@ -124,13 +124,13 @@
 </template>
 
 <script>
-import CarouselImage1 from '../assets/img/living_1.jpg'
-import CarouselImage2 from '../assets/img/kitchen_1.jpg'
-import CarouselImage3 from '../assets/img/living_2.jpg'
-import CarouselImage4 from '../assets/img/bathroom_2.jpg'
+import CarouselImage1 from '../assets/img/carousel_1.jpg'
+import CarouselImage2 from '../assets/img/carousel_2.jpg'
+import CarouselImage3 from '../assets/img/carousel_3.jpg'
+import CarouselImage4 from '../assets/img/carousel_4.jpg'
 import BondedImage from '../assets/bonded.png'
 import RoundLogo from '../assets/logo_round.png'
-import LivingRoom from '../assets/img/living_4.jpg'
+import LivingRoom from '../assets/img/living.jpg'
 
 export default {
     data() {

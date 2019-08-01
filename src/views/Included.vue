@@ -78,7 +78,7 @@
             <v-card color="included-section">
                 <v-layout align-center row wrap>
                     <v-flex xs12 sm5>
-                        <v-img :src="bedroom" height="200px" contain></v-img>
+                        <v-img :src="everyroom" height="200px" contain></v-img>
                     </v-flex>
                     <v-flex xs12 sm7>
                         <v-card-title primary-title>
@@ -100,16 +100,16 @@
 
 <script>
 import MySpacer from '../components/MySpacer.vue'
-import Livingroom from '../assets/img/living_3.jpg'
-import Kitchen from '../assets/img/kitchen_2.jpg'
-import Bedroom from '../assets/img/bedroom_2.jpg'
-import Bathroom from '../assets/img/bathroom_1.jpg'
+import Livingroom from '../assets/img/blc.jpg'
+import Kitchen from '../assets/img/kitchen.jpg'
+import Everyroom from '../assets/img/everyroom.jpg'
+import Bathroom from '../assets/img/bathroom.jpg'
 
 export default {
     data: () => ({
         livingroom: Livingroom,
         kitchen: Kitchen,
-        bedroom: Bedroom,
+        everyroom: Everyroom,
         bathroom: Bathroom
     }),
     components: {
