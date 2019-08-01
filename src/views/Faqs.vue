@@ -74,7 +74,7 @@
 
         <v-flex xs12>
             <faq-item title="Do you offer Green or Eco-Friendly Cleaning?">
-                Yes, we do offer Eco-friendly House cleaning products website.
+                Yes, we do offer Eco-friendly House cleaning products.
             </faq-item>
         </v-flex>
 

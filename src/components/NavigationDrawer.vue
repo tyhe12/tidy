@@ -80,8 +80,8 @@ export default {
                 { icon: 'fas fa-phone', text: '708-308-8582', link: 'tel:708-308-8582' },
                 {
                     icon: 'fas fa-envelope',
-                    text: 'info@cleaningwithcooley.com',
-                    link: 'mailto:info@cleaningwithcooley.com'
+                    text: 'cleaningwithcooley@gmail.com',
+                    link: 'mailto:cleaningwithcooley@gmail.com'
                 }
             ]
         }

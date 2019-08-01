@@ -83,16 +83,16 @@ export default {
                 link: 'https://www.instagram.com/cleaningwithcooley/'
             },
             {
-                icon: 'fab fa-yelp',
-                link: 'https://www.yelp.com/biz/cleaning-with-cooley-chicago'
-            },
-            {
                 icon: 'fab fa-twitter',
                 link: 'https://twitter.com/CleaningwCooley'
             },
             {
+                icon: 'fas fa-phone',
+                link: 'tel:708-308-8582'
+            },
+            {
                 icon: 'fas fa-envelope',
-                link: 'mailto:deb@empirerecords.biz?subject=Blog Feedback'
+                link: 'mailto:cleaningwithcooley@gmail.com?subject=Inquery'
             }
         ]
     })

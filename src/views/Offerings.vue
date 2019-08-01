@@ -99,7 +99,7 @@ export default {
                 price: 30
             },
             {
-                title: 'Interior Refrigirator Clean',
+                title: 'Interior Refrigerator Clean',
                 price: 35
             },
             {
