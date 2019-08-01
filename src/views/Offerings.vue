@@ -8,7 +8,7 @@
                 grow
                 slider-color="pink lighten-3"
             >
-                <v-tab v-for="(tab, index) in tabs" :key="index" ripple>
+                <v-tab class="offerings__tab" v-for="(tab, index) in tabs" :key="index" ripple>
                     <span class="title my-headline">
                         {{ tab.name }}
                     </span>
@@ -143,5 +143,9 @@ export default {
 <style scoped lang="scss">
 .page-header {
     margin-bottom: 24px;
+}
+
+.offerings__tab {
+    width: 50%;
 }
 </style>
