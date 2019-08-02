@@ -92,7 +92,7 @@ export default {
             },
             {
                 icon: 'fas fa-envelope',
-                link: 'mailto:cleaningwithcooley@gmail.com?subject=Inquery'
+                link: 'mailto:info@cleaningwithcooley.com'
             }
         ]
     })
