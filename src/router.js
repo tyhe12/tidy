@@ -9,7 +9,7 @@ import Included from './views/Included.vue'
 
 Vue.use(Router)
 
-export default new Router({
+const router = new Router({
     routes: [
         {
             path: '/',
@@ -47,3 +47,9 @@ export default new Router({
         }
     ]
 })
+
+router.afterEach(to => {
+    gtag('config', 'UA-147750634-1', { page_path: to.path })
+})
+
+export default router
