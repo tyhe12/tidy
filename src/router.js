@@ -48,8 +48,4 @@ const router = new Router({
     ]
 })
 
-router.afterEach(to => {
-    gtag('config', 'UA-147750634-1', { page_path: to.path })
-})
-
 export default router
