@@ -6,13 +6,13 @@
                     <h3 class="title my-title mb-0">{{ title }}</h3>
                 </v-flex>
                 <v-flex xs12 sm6>
-                    <v-rating
-                        class="review-rating no-padding-left"
+                    <star-rating
                         v-model="rating"
                         background-color="pink lighten-3"
                         color="pink"
                         readonly
-                    ></v-rating>
+                        small-right
+                    ></star-rating>
                 </v-flex>
             </v-layout>
         </v-card-title>
@@ -23,16 +23,19 @@
 </template>
 
 <script>
+import StarRating from './StarRating.vue'
+
 export default {
+    components: {
+        StarRating
+    },
     props: {
         rating: {
             type: Number,
-            required: true,
             default: 5
         },
         title: {
             type: String,
-            required: true,
             default: ''
         }
     }
@@ -43,22 +46,5 @@ export default {
 .review-card__text {
     margin-top: 0;
     padding-top: 0;
-}
-
-.review-rating {
-    display: flex;
-    justify-content: flex-start;
-}
-
-@media only screen and (min-width: 600px) {
-    .review-rating {
-        justify-content: flex-end;
-    }
-}
-</style>
-
-<style>
-.no-padding-left .fa-star {
-    padding-left: 0;
 }
 </style>

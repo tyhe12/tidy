@@ -45,7 +45,10 @@ const router = new Router({
             name: 'included',
             component: Included
         }
-    ]
+    ],
+    scrollBehavior() {
+        return { x: 0, y: 0 }
+    }
 })
 
 export default router
